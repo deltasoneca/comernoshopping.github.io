@@ -235,7 +235,8 @@ header.header ul.nav.navbar-nav { margin-right: -30px }
     overflow: hidden;
     text-align: center;
 }
-.single-portfolio h2 span { font-weight: 200 }
+.single-portfolio h2 span { font-weight: 200; font-size: small; }
+
 .single-portfolio img {
     position: relative;
     display: block;
@@ -247,7 +248,7 @@ header.header ul.nav.navbar-nav { margin-right: -30px }
     padding: 0 2em;
     color: #fff;
     /* text-transform: uppercase;*/
-    font-size: 1.25em;
+    font-size: 1em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
