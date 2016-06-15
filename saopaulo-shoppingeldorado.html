@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Onde comer no shopping</title>
-    
-
+   
+	
+	
     <script type="text/javascript">
 	
 	
@@ -133,13 +134,64 @@
     <![endif]-->
 	
 	    
+	<style media="screen" type="text/css">
 	
+	.crunchify-top:hover {
+	color: #fff !important;
+	background-color: #ed702b;
+	text-decoration: none;
+}
+ 
+.crunchify-top {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	width: 3.2rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size: 1.4rem;
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	border-radius: 3.2rem;
+	text-align: center;
+	cursor: pointer;
+}
+	
+	</style>
+	
+	
+<!-- Crunchify's Scroll to Top Script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</script>
+ 
+<script>            
+	jQuery(document).ready(function() {
+		var offset = 220;
+		var duration = 500;
+		jQuery(window).scroll(function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.crunchify-top').fadeIn(duration);
+			} else {
+				jQuery('.crunchify-top').fadeOut(duration);
+			}
+		});
+ 
+		jQuery('.crunchify-top').click(function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+	});
+</script>
 	
     </head>
     
     <body onload="initialize()">
     
-    
+  
+	
      <header class="header" >
         
 		
@@ -236,21 +288,17 @@
                 <div class="col-md-7">
                     <div class="footer-copyright">
                         <p> Todos os direitos reservados 2016 Comer No Shopping &#174; </p>
+						<p>contato: <span style="letter-spacing: 1px">comernoshopping@gmail.com</span></p>
+                   
                     </div>
                 </div>
                 
-                <div class="col-md-5">
-                    <div class="footer-menu">
-                        <ul>
-                            
-                            <li><a href="">Anuncie</a></li>
-                            <li><a href="">Contato</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
+		
+		<a href="#" class="crunchify-top">↑</a>
+		
     </footer> <!-- End footer -->
     
 
