@@ -11,9 +11,7 @@ body
         overflow-x: hidden;
     }
 	
-.tm-white a {
-	color: #fff;
-}
+
 
 /* start h1 group */
 h1 { 
@@ -28,7 +26,7 @@ h4
         font-weight: bold;
     }
 /* end h1 group */
-p { line-height: 1.6em; }
+p { line-height: 1.6em; color: black; }
 /* img */
 img
     {
@@ -36,6 +34,10 @@ img
         height: auto;
     }
 /* img */
+
+.tm-white a {
+	color: #fff;
+}
 
 /* overlay */
 .overlay 
