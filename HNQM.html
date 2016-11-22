@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="ufc-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Hacker News Quote Machine</title>
+
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+		
+		<style>
+
+body {
+  background-color: #f1f1f1;
+  color: black;
+  font-family: 'Reem Kufi', sans-serif;
+  padding-top: 10px;
+}
+
+.dynamic {
+  background-color: white;
+  border-radius: 4px;
+  padding-top: 4px;
+} 
+		
+		</style>
+		
+		<script>
+		
+		  $(document).ready(function() {
+  var lasthours = "";
+
+    
+    $("#refresh").on("click", function() {
+      
+      var html = "";
+      var url = "https://hn.algolia.com/api/v1/search?tags=comment&numericFilters=points>120&page=";
+      var page = Math.floor(Math.random() * (20)) + 1;
+      url += page.toString();
+       
+      var position = 0;
+      position = Math.floor(Math.random() * 20);
+   
+      
+    $.getJSON(url, function(json) {
+      
+        var hits = json.hits;
+
+
+        
+        var html = "<p>"+hits[position].comment_text+"</p><p>Story: <a  target='_blank'  href='"+hits[position].story_url+"'>"+hits[position].story_title+"</a><br><a  target='_blank'  href='https://news.ycombinator.com/item?id="+hits[position].story_id+"'>comment by "+hits[position].author+"</a></p>";
+        
+    $("#quote-text").html(html);
+
+    });
+    });
+  });
+
+
+		
+		</script>
+		
+		
+  </head>
+  <body class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offest-2">
+    <!-- <section id="weather">
+      <row>
+        <div class="col-xs-offset-3 col-xs-9">
+          <p>Should I use a coat? <i class="fa  fa-user-secret"></i> <span class="dynamic"><strong>YES, two.</strong></span></p>
+          <p>Should I get an umbrella? <i class="fa  fa-umbrella"></i> <span><strong class="dynamic">NO.</strong></span></p>
+        </div>
+       </row>
+    </section> -->
+
+    <section id="quote">
+     <row>
+       <div class="col-xs-12 text-center">
+         <h3>Hacker News Quote Machine</h3>
+       </div>
+      </row>
+      <row>
+        
+        <div class="col-xs-9 dynamic">
+          <p id="quote-text">You can stand on the shoulders of giants or a big enough pile of dwarfs, works either way.</p>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn" id="refresh"><i class="fa fa-refresh"></i></button>
+          <a href="https://twitter.com/home?status=Hacker%20News%20Quote%20Machine%3A%20www.perfil.med.br/hnqm" target="_blank"><button class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>
+        </div>  
+      </row>
+    </section>
+    
+    
+    
+  </body>
+  </html>
