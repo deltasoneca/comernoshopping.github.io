@@ -12,13 +12,22 @@ formacaos:
 - titulo: Desenvolvedor Front End
   inst: FCC
   ano: 2016
-vinculo1ano: 2016
-vinculo1cargo: Programador
-vinculo1inst: Autônomo
-atendimento1tipo: home
-atendimento1end: Rua dos Bobos
-atendimento1tel: 11 999141889
-atendimento1nome: Consultorio particular
+vinculos:
+- cargo: Estudante
+  inst: FCC
+  ano: 2016
+- cargo: Empreendedor
+  inst: Perfil.med.br
+  ano: 2016
+atendimentos:
+- tipo: home
+  nome: Home Office
+  end: Rua Simao Alvares, 555
+  tel: 11 999009999
+- tipo: hospital-o
+  nome: FCC
+  end: Na internet
+  tel: não tem
 layout: default
 ---
 
