@@ -7,7 +7,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Dr. José Correia Picanço - Cirurgião Geral</title>
+  <title> {{ page.genero }} {{ page.nome }} - {{ page.especialidade }}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
@@ -65,10 +65,10 @@
         <header id="header">
             <div id="logo">
                 <h2>
-                    Dr. {{ page.nome }}
+                    {{ page.genero }} {{ page.nome }}
                 </h2>
                 <h4>
-                    Cirurgia
+                    {{ page.especialidade }}
                 </h4>
             </div>
         </header>
@@ -99,14 +99,14 @@
 
                             <div class="info">
                                 <h2>
-                                    Dr. {{ page.nome }}
+                                    {{ page.genero }} {{ page.nome }}
                                 </h2>
                                 <h4>
-                                    Cirurgia
+                                    {{ page.especialidade }}
                                 </h4>
                                 <p>
-                                    Nascido em Pernambuco em 1745, cirurgião-geral, fundador da Faculdade de Medicina da Bahia e da Faculdade de Medicina do Rio de Janeiro.<br>Licenciado em Cirurgia (Paris), professor de Anatomia (Coimbra), 1º Cirurgião da Real Câmara, Cirurgião-Mor do Reino, Membro da Real Academia de Ciências de Lisboa, Fidalgo da Casa Real e do Conselho de sua Majestade, Cavaleiro da Ordem de Cristo e Primeiro Barão de Goiana.
-								</p>
+                                    {{ page.descricao }}
+				</p>
                             </div>
                         </div>
                         <div class="g1">
@@ -151,36 +151,101 @@
                             <ul class="no-list work">
                                 <li>
                                     <h5>
-                                        Doutor em Medicina
-                                    </h5><span class="label label-info">1772</span>
+                                        {{ page.formacao1 }}
+                                    </h5><span class="label label-info">{{ page.formacao1ano }}</span>
                                     <p>
-                                        Formação pela Universidade de Montpellier.
+                                        {{ page.formacao1inst }}
                                     </p>
                                 </li>
-                                <li>
+				    <li>
                                     <h5>
-                                        Officier de Santè
-                                    </h5><span class="label label-info">1768</span>
+                                        {{ page.formacao2 }}
+                                    </h5><span class="label label-info">{{ page.formacao2ano }}</span>
                                     <p>
-                                        Formação pela Universidade de Paris.
+                                        {{ page.formacao2inst }}
                                     </p>
                                 </li>
-                                <li>
+				    <li>
                                     <h5>
-                                        Licenciado em Cirurgia
-                                    </h5><span class="label label-info">1767</span>
+                                        {{ page.formacao3 }}
+                                    </h5><span class="label label-info">{{ page.formacao3ano }}</span>
                                     <p>
-                                        Formação pela Escola Cirúrgica do Hospital São José, Lisboa.
+                                        {{ page.formacao3inst }}
                                     </p>
                                 </li>
-                                <li>
+				    <li>
                                     <h5>
-                                        Cirurgião-barbeiro
-                                    </h5><span class="label label-danger">1760-1766</span>
+                                        {{ page.formacao4 }}
+                                    </h5><span class="label label-info">{{ page.formacao4ano }}</span>
                                     <p>
-                                        Educação domiciliar com seu pai, o também Cirurgião-barbeiro Francisco Correia Picanço.
+                                        {{ page.formacao4inst }}
                                     </p>
                                 </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao5 }}
+                                    </h5><span class="label label-info">{{ page.formacao5ano }}</span>
+                                    <p>
+                                        {{ page.formacao5inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao6 }}
+                                    </h5><span class="label label-info">{{ page.formacao6ano }}</span>
+                                    <p>
+                                        {{ page.formacao6inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao7 }}
+                                    </h5><span class="label label-info">{{ page.formacao7ano }}</span>
+                                    <p>
+                                        {{ page.formacao7inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao8 }}
+                                    </h5><span class="label label-info">{{ page.formacao8ano }}</span>
+                                    <p>
+                                        {{ page.formacao8inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao9 }}
+                                    </h5><span class="label label-info">{{ page.formacao9ano }}</span>
+                                    <p>
+                                        {{ page.formacao9inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao10 }}
+                                    </h5><span class="label label-info">{{ page.formacao10ano }}</span>
+                                    <p>
+                                        {{ page.formacao10inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao11 }}
+                                    </h5><span class="label label-info">{{ page.formacao11ano }}</span>
+                                    <p>
+                                        {{ page.formacao11inst }}
+                                    </p>
+                                </li>
+				    <li>
+                                    <h5>
+                                        {{ page.formacao12 }}
+                                    </h5><span class="label label-info">{{ page.formacao12ano }}</span>
+                                    <p>
+                                        {{ page.formacao12inst }}
+                                    </p>
+                                </li>
+                                
                             </ul>
                             
                         </div>
@@ -196,51 +261,30 @@
                                 Vínculos
                             </h3>
                             <ul class="no-list work">
-								<li>
-                                    <span class="label label-info">1808</span>
+				<li>
+                                    <span class="label label-info">{{ page.vinculo1ano }}</span>
                                     <p>
-                                        Fundador da Escola Cirúrgica do Rio de Janeiro
+                                        {{ page.vinculo1cargo }} - {{ page.vinculo1inst }}
                                     </p>
                                 </li>
-								<li>
-                                    <span class="label label-info">1808</span>
+				    <li>
+                                    <span class="label label-info">{{ page.vinculo2ano }}</span>
                                     <p>
-                                        Fundador da Escola Cirúrgica da Bahia
+                                        {{ page.vinculo2cargo }} - {{ page.vinculo2inst }}
                                     </p>
                                 </li>
-								<li>
-                                    <span class="label label-info">1808-1816</span>
+				    <li>
+                                    <span class="label label-info">{{ page.vinculo3ano }}</span>
                                     <p>
-                                         Cirurgião Mor do Reino e Estados do Brasil
+                                        {{ page.vinculo3cargo }} - {{ page.vinculo3inst }}
                                     </p>
                                 </li>
-								<li>
-                                    <span class="label label-info">1782-1808</span>
+				    <li>
+                                    <span class="label label-info">{{ page.vinculo4ano }}</span>
                                     <p>
-                                         Deputado e membro da  Real Junta do Protomedicato de Portugal
+                                        {{ page.vinculo4cargo }} - {{ page.vinculo4inst }}
                                     </p>
                                 </li>
-								<li>
-                                    <span class="label label-info">1779-1782</span>
-                                    <p>
-                                         Cirurgião-mor do Reino e Primeiro Cirurgião da Real Câmara
-                                    </p>
-                                </li>
-								
-								 
-								<li>
-                                    <span class="label label-info">1771-1789</span>
-                                    <p>
-                                        Professor da Cadeira de Anatomia Prática e Cirurgia da Universidade de Coimbra
-                                    </p>
-                                </li>
-                                <li>
-                                    <span class="label label-info">1766</span>
-                                    <p>
-                                        Cirurgião do Corpo Avulso de Oficiais de Ordenança das Estradas e Reformados
-                                    </p>
-                                </li>
-
                                 
                             </ul>
                          
@@ -256,29 +300,59 @@
                        <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="fa fa-home"></i>
+                              <i class="fa fa-{{ page.atendimento1tipo }}"></i>
                             </div>
                             <div class="sny-icon-content">
-                              <h4>Clínica Particular</h4>
+                              <h4>{{ page.atendimento1nome }}</h4>
 							  <p>Endereço</p>
-                              <p>Rua Bruno Lobo, 50</p>
+                              <p>{{ page.atendimento1end }}</p>
 							  <p>Telefone</p>
-                              <p>(21) 2590-4891</p>
+                              <p>{{ page.atendimento1tel }}</p>
 							  
                             </div>
                          </div>
                        </div>
-                       <div class="g1">
+			    <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="fa fa-hospital-o"></i>
+                              <i class="fa fa-{{ page.atendimento2tipo }}"></i>
                             </div>
                             <div class="sny-icon-content">
-                              <h4>Hospital da Faculdade de Medicina do Rio de Janeiro</h4>
+                              <h4>{{ page.atendimento2nome }}</h4>
 							  <p>Endereço</p>
-                              <p>Rua Bruno Lobo, 50</p>
+                              <p>{{ page.atendimento2end }}</p>
 							  <p>Telefone</p>
-                              <p>(21) 2590-4891</p>
+                              <p>{{ page.atendimento2tel }}</p>
+							  
+                            </div>
+                         </div>
+                       </div>
+			    <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="fa fa-{{ page.atendimento3tipo }}"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>{{ page.atendimento3nome }}</h4>
+							  <p>Endereço</p>
+                              <p>{{ page.atendimento3end }}</p>
+							  <p>Telefone</p>
+                              <p>{{ page.atendimento3tel }}</p>
+							  
+                            </div>
+                         </div>
+                       </div>
+			    <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="fa fa-{{ page.atendimento4tipo }}"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>{{ page.atendimento4nome }}</h4>
+							  <p>Endereço</p>
+                              <p>{{ page.atendimento4end }}</p>
+							  <p>Telefone</p>
+                              <p>{{ page.atendimento4tel }}</p>
 							  
                             </div>
                          </div>
