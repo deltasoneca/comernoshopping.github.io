@@ -7,7 +7,7 @@ layout: default
 ---
 
 ---
-
+nome: sónome
 layout.page.nome: Teotonio
 layout.content.nome: Dona
 layout.nome: lasttry
