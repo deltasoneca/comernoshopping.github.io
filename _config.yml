@@ -8,6 +8,3 @@ collections:
   uploads:
     title: Uploads
     output: true
-  medicos:
-    title: medicos
-    output: true
