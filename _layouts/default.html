@@ -153,10 +153,10 @@
 				<ul class="no-list work">
                                 <li>
                                     <h5>
-                                        {{ page.curso[0] }}
-                                    </h5><span class="label label-info">{{ page.curso[2] }}</span>
+                                        {{ page.curso(0) }}
+                                    </h5><span class="label label-info">{{ page.curso(1) }}</span>
                                     <p>
-                                        {{ page.curso[1] }}
+                                        {{ page.curso(2) }}
                                     </p>
                                 </li>
 				{% endfor %}
