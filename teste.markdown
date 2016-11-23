@@ -5,9 +5,10 @@ nome: Rodrigo Pontes
 genero: Dr.
 especialidade: Tudologia
 descricao: Famoso tudólogo
-formacao1: Economista
-formacao1ano: 2012
-formacao1inst: USP
+cursos:
+- - Economista
+  - USP
+  - 2012
 vinculo1ano: 2016
 vinculo1cargo: Programador
 vinculo1inst: Autônomo
