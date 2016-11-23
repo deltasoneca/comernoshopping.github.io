@@ -125,6 +125,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 
+
 /* Utility */
 .chromeframe {
   margin: 0.2em 0;
@@ -268,11 +269,20 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 .info{
 
 }
-.info h2, #header h2{
+.info h2{
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: .3em;
+  font-size: 1.75em;
 }
+
+#header h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: .3em;
+  font-size: 3em;
+}
+
 .info h4, #header h4{
   color: #001b66;
 }

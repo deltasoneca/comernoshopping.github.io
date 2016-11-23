@@ -13,6 +13,7 @@ body
 	
 
 
+
 /* start h1 group */
 h1 { 
     margin-top: 0;
@@ -233,18 +234,7 @@ img
     {
         float: left;
     }
-#feature .fa
-    {
-        background: #28a7e9;
-        border-radius: 50%;
-        color: #fff;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin-right: 20px;
-    }
+
 /* end feature */
 
 /* start feature1 */
