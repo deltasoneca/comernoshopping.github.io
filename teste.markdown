@@ -1,16 +1,16 @@
 ---
 title: teste
 date: 2016-11-23 17:58:00 -02:00
-nome: Teotônio
-genero: 
-especialidade: 
-descricao: 
-formacao1: 
-formacao1ano: 
-formacao1inst: 
-vinculo1ano: 
-vinculo1cargo: 
-vinculo1inst: 
+nome: Rodrigo Pontes
+genero: Dr.
+especialidade: Tudologia
+descricao: Famoso tudólogo
+formacao1: Economista
+formacao1ano: 2012
+formacao1inst: USP
+vinculo1ano: 2016
+vinculo1cargo: Programador
+vinculo1inst: Autônomo
 atendimento1tipo: home
 atendimento1end: Rua dos Bobos
 atendimento1tel: 11 999141889
