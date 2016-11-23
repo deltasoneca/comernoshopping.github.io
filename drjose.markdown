@@ -3,7 +3,6 @@ title: Dr José Correia Picanço
 date: 2016-11-23 17:36:00 -02:00
 ---
 
-teste
 <div class="main-container">
 
 <div class="main wrapper clearfix">
