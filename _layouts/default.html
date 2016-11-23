@@ -148,15 +148,22 @@
                             <h3>
                                 Cursos e Especializações
                             </h3>
-                            <ul class="no-list work">
+				
+				{% for curso in page.cursos %}
+				<ul class="no-list work">
                                 <li>
                                     <h5>
-                                        {{ page.formacao1 }}
-                                    </h5><span class="label label-info">{{ page.formacao1ano }}</span>
+                                        {{ page.curso[0] }}
+                                    </h5><span class="label label-info">{{ page.curso[2] }}</span>
                                     <p>
-                                        {{ page.formacao1inst }}
+                                        {{ page.curso[1] }}
                                     </p>
                                 </li>
+				{% endfor %}
+				
+				
+                           
+
 				    <li>
                                     <h5>
                                         {{ page.formacao2 }}
@@ -203,50 +210,7 @@
                                     </h5><span class="label label-info">{{ page.formacao7ano }}</span>
                                     <p>
                                         {{ page.formacao7inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <h5>
-                                        {{ page.formacao8 }}
-                                    </h5><span class="label label-info">{{ page.formacao8ano }}</span>
-                                    <p>
-                                        {{ page.formacao8inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <h5>
-                                        {{ page.formacao9 }}
-                                    </h5><span class="label label-info">{{ page.formacao9ano }}</span>
-                                    <p>
-                                        {{ page.formacao9inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <h5>
-                                        {{ page.formacao10 }}
-                                    </h5><span class="label label-info">{{ page.formacao10ano }}</span>
-                                    <p>
-                                        {{ page.formacao10inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <h5>
-                                        {{ page.formacao11 }}
-                                    </h5><span class="label label-info">{{ page.formacao11ano }}</span>
-                                    <p>
-                                        {{ page.formacao11inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <h5>
-                                        {{ page.formacao12 }}
-                                    </h5><span class="label label-info">{{ page.formacao12ano }}</span>
-                                    <p>
-                                        {{ page.formacao12inst }}
-                                    </p>
-                                </li>
-                                
-                            </ul>
+
                             
                         </div>
                         
