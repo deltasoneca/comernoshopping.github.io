@@ -7,8 +7,9 @@ layout: default
 ---
 
 ---
-nome: sónome
-layout.page.nome: Teotonio
-layout.content.nome: Dona
-layout.nome: lasttry
+nome: nome
+layout.page.nome: layout.page.nome
+layout.content.nome: layout.content.nome
+layout.nome: layout.nome
+page.nome: page.nome
 ---
