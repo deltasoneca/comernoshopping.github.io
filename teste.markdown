@@ -6,9 +6,12 @@ genero: Dr.
 especialidade: Tudologia
 descricao: Famoso tudólogo
 formacao:
-  titulo: Economista
+- titulo: Economista
   inst: USP
   ano: 2012
+- titulo: Desenvolvedor Front End
+  inst: FCC
+  ano: 2016
 vinculo1ano: 2016
 vinculo1cargo: Programador
 vinculo1inst: Autônomo
