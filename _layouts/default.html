@@ -177,33 +177,18 @@
                                 Vínculos
                             </h3>
                             <ul class="no-list work">
+				    
+				    {% for vinculo in page.vinculos %}
+				    
 				<li>
-                                    <span class="label label-info">{{ page.vinculo1ano }}</span>
+                                    <span class="label label-info">{{ vinculo.ano }}</span>
                                     <p>
-                                        {{ page.vinculo1cargo }} - {{ page.vinculo1inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <span class="label label-info">{{ page.vinculo2ano }}</span>
-                                    <p>
-                                        {{ page.vinculo2cargo }} - {{ page.vinculo2inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <span class="label label-info">{{ page.vinculo3ano }}</span>
-                                    <p>
-                                        {{ page.vinculo3cargo }} - {{ page.vinculo3inst }}
-                                    </p>
-                                </li>
-				    <li>
-                                    <span class="label label-info">{{ page.vinculo4ano }}</span>
-                                    <p>
-                                        {{ page.vinculo4cargo }} - {{ page.vinculo4inst }}
+                                        {{ vinculo.cargo }} - {{ vinculo.inst }}
                                     </p>
                                 </li>
                                 
                             </ul>
-                         
+                         {% endfor %}
 
                         </div>
                         
@@ -213,66 +198,25 @@
               <!-- Contact Tab Data -->
                 <div id="atendimento">
                     <section class="clearfix">
+			    {% for atendimento in page.atendimentos %}
                        <div class="g1">
                          <div class="sny-icon-box">
                            <div class="sny-icon">
-                              <i class="fa fa-{{ page.atendimento1tipo }}"></i>
+                              <i class="fa fa-{{ atendimento.tipo }}"></i>
                             </div>
                             <div class="sny-icon-content">
-                              <h4>{{ page.atendimento1nome }}</h4>
+                              <h4>{{ atendimento.nome }}</h4>
 							  <p>Endereço</p>
-                              <p>{{ page.atendimento1end }}</p>
+                              <p>{{ atendimento.end }}</p>
 							  <p>Telefone</p>
-                              <p>{{ page.atendimento1tel }}</p>
+                              <p>{{ atendimento.tel }}</p>
 							  
                             </div>
                          </div>
                        </div>
-			    <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="fa fa-{{ page.atendimento2tipo }}"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>{{ page.atendimento2nome }}</h4>
-							  <p>Endereço</p>
-                              <p>{{ page.atendimento2end }}</p>
-							  <p>Telefone</p>
-                              <p>{{ page.atendimento2tel }}</p>
-							  
-                            </div>
-                         </div>
-                       </div>
-			    <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="fa fa-{{ page.atendimento3tipo }}"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>{{ page.atendimento3nome }}</h4>
-							  <p>Endereço</p>
-                              <p>{{ page.atendimento3end }}</p>
-							  <p>Telefone</p>
-                              <p>{{ page.atendimento3tel }}</p>
-							  
-                            </div>
-                         </div>
-                       </div>
-			    <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="fa fa-{{ page.atendimento4tipo }}"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>{{ page.atendimento4nome }}</h4>
-							  <p>Endereço</p>
-                              <p>{{ page.atendimento4end }}</p>
-							  <p>Telefone</p>
-                              <p>{{ page.atendimento4tel }}</p>
-							  
-                            </div>
-                         </div>
-                       </div>
+			{% endfor %}
+			    
+			   
                        
                        <div class="break"></div>
                        
