@@ -64,7 +64,7 @@
 							<h1 class="text-upper">Médico,<br>seja mais recomendado por seus pacientes,<br>consiga mais consultas particulares.</h1>
 							<h3>Perfil.med.br é a solução mais <strong>rápida e barata</strong><br>de site para médicos.</h3>
 							<p style="color: #FFF;">Preencha seus dados e em 1 dia seu site estará publicado na internet</p>
-							<a href="javascript:document.getElementById('name').focus()"><button class="btn btn-success text-uppercase"><i class="fa fa-arrow-down"></i> Crie seu site</button></a>
+							<a href="#name"><button class="btn btn-success text-uppercase"><i class="fa fa-arrow-down"></i> Crie seu site</button></a>
 							<a href="./drjosecorreiapicanco.html" target="_blank" ><img src="images/software-img.png" class="img-responsive" alt="site médico"></a>
 							<a href="./drjosecorreiapicanco.html" target="_blank" class="btn btn-info">Clique e veja um exemplo</a>	
 						</div>
@@ -138,7 +138,7 @@
 					</div>
 					<div class="col-md-4 wow fadeInRight text-center" data-wow-delay="0.6s">
 						<h2 class="text-primary title" style="margin-top: 20%">O Perfil.med.br sai por apenas<br>R$ 199,00 por ano!</h2>
-						<a href="javascript:document.getElementById('name').focus()"><button class="btn btn-success text-uppercase"><i class="fa fa-arrow-down"></i> Crie seu site agora</button></a>
+						<a href="#name"><button class="btn btn-success text-uppercase"><i class="fa fa-arrow-down"></i> Crie seu site agora</button></a>
 					</div>
 				</div>
 			</div>
@@ -152,7 +152,7 @@
 					<div class="col-md-3 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
 						<i class="fa fa-play"></i>
 						<h5>Passo 1: <strong>Inicie o cadastro</strong></h5>
-						<p class="text-left">Coloque o seu nome, CRM e email abaixo. Você irá receber o link do cadastro completo onde preencherá seus dados.</p>
+						<p class="text-left">Coloque o seu nome, CRM e email abaixo para iniciar o cadastro. Em seguida preencha o resto de seus dados para o cadastro completo.</p>
 					</div>
 					<div class="col-md-3 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
 						<i class="fa fa-play"> </i> <i class="fa fa-play"></i>
@@ -186,9 +186,9 @@
                     <form id="contact-us" method="post" action="http://formspree.io/rodrigo@perfil.med.br"
       method="POST">
                         <!-- Left Inputs -->
-                        <div class="col-xs-offset-3 col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                        <div class="col-xs-offset-3 col-xs-6 wow animated slideInLeft" >
                             <!-- Name -->
-                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Nome" />
+                            <label for="name">Cadastro</label><input type="text" name="name" id="name" required="required" class="form" placeholder="Nome" />
 							<!-- CRM -->
                             <input type="text" name="crm" id="crm" required="required" class="form" placeholder="CRM" />
 							<!-- Email -->
